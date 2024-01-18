@@ -1,0 +1,53 @@
+/* Center the h1 title */
+h1 {
+  text-align: center;
+}
+
+#container > div:nth-child(2) {
+  width: 45%;
+  float: left;
+  border: 1px solid red;
+  border-radius: 15px;
+  padding: 10px; /* Optional: Add padding inside the border */
+}
+
+#container > div:nth-child(3) {
+  width: 45%;
+  float: left;
+  border: 1px dashed red;
+  border-radius: 15px;
+  padding:10px; /* Optional: Add padding inside the border */
+}
+
+#container > div:nth-child(4){
+  width: 100%;
+  margin-top: 60%;
+  float: right; /* Position last div to the right */
+  margin-bottom: 20px;
+}
+
+/* Set font weights for headers and lists */
+h3 {
+  font-weight: 500;
+}
+
+ol, ul {
+  font-weight: 300;
+  }
+
+/* Style ordered */
+ol {
+  padding: 20px;
+  list-style: decimal outside; 
+}
+
+/* Style unordered list */
+ul {
+  padding: 20px;
+  list-style: upper-roman outside;
+}
+
+/* Add underline on hover for links */
+a:hover {
+  text-decoration: underline;
+}
