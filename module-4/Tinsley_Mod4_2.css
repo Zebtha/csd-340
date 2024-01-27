@@ -1,0 +1,37 @@
+/* 
+Shane Tinsley Assignment 4.2 -1/26/24 - Resources:
+Textbook HTML & CSS design and build websites -
+https://github.com/Zebtha/csd-340.git
+https://zebtha.github.io/csd-340/
+*/
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
+    margin-top: 10%;
+  }
+  
+  img {
+    max-width: 50%;
+    object-fit: scale-down; /* Or choose a different object-fit value as needed */
+  }
+  
+  h1 {
+    text-align: center;
+    color: rgba(255, 0, 0, 0.8); /* Optional color change */
+  }
+  
+  h3 {
+    text-align: center;
+    color: rgba(0, 0, 255, 0.8); /* Optional color change */
+  }
+  
+  figure {
+    text-align: center;
+  }
+  
+  figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(0, 128, 0, 0.8); /* Optional color change */
+  }

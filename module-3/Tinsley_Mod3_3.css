@@ -16,7 +16,7 @@ h1 {
   float: left;
   border: 1px dashed red;
   border-radius: 15px;
-  padding:10px; /* Optional: Add padding inside the border */
+  padding: 10px; /* Optional: Add padding inside the border */
 }
 
 #container > div:nth-child(4){
