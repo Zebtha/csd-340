@@ -1,0 +1,72 @@
+<!-- 
+    Shane Tinsley - : Assignment 9.3 -2/16/24 Resources: 
+    Textbook HTML & CSS design and build websites 
+    https://github.com/Zebtha/csd-340.git
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <!-- Meta tags -->
+    <meta name="description" content="This is a history of Shane Tinsley and his experience with web pages.">
+    <meta name="keywords" content="HTML, CSS, web development, CSD 340">
+    <meta name="robots" content="nofollow">
+    <meta name="author" content="Shane Tinsley">
+
+    <!-- Link to external CSS file -->
+    <link href="Tinsley_Mod2_2.css" rel="stylesheet" type="text/css">
+
+    <!-- Other head elements (such as scripts) can be added here -->
+    <!-- JavaScript variables -->
+    <script>
+        var avantGardeValue = "avant-garde";
+        var sexualAwakeningValue = "sexual awakening";
+        var allMaleValue = "all-male";
+        var unpalatableValue = "unpalatable";
+    </script>
+</head>
+
+<body>
+    <!-- Adding a <div> with an ID of "container" -->
+    <div id="container">
+        <!-- Content inside the div can be added here -->
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <h2>Shane Tinsley: Lilies Movie Review:</h2>
+        <p class="review">
+
+        <p>One of the best films ever made.
+        </p>
+        <p></p>An <span id="avant-garde">_______</span> story of love, betrayal, social taboos, <span
+            id="sexual_awakening">_______</span>,
+        and ardent yearning. Stellar casting & nuanced acting coalesce perfectly in what could have been a complete
+        disaster, due to the story's complexity. Each actor in this <span id="all-male">_______</span> cast plays two
+        different roles,
+        (including all female characters) across two different time periods.
+        </p>
+
+        <p>Told through a series of flashbacks; John Greyson's inspired direction, Daniel Jobin's fantastic sur/realist
+            Cinematography, and Mychael Danna's hauntingly beautiful score produce a feast of emotions. Some reviewers
+            have called Lilies <span id="unpalatable">_______</span> or an acquired taste, but I assure you that those
+            with refined palettes will
+            cherish Lilies' timeless beauty for
+            ages to come.
+        </p>
+
+        <!-- Buttons to replace placeholders -->
+        <button type="button"
+            onclick="document.getElementById('avant-garde').innerHTML = avantGardeValue">avant-garde</button>
+        <button type="button"
+            onclick="document.getElementById('sexual_awakening').innerHTML = sexualAwakeningValue">sexual
+            awakening</button>
+        <button type="button" onclick="document.getElementById('all-male').innerHTML = allMaleValue">all-male</button>
+        <button type="button"
+            onclick="document.getElementById('unpalatable').innerHTML = unpalatableValue">unpalatable</button>
+    </div>
+
+
+
+</body>
+
+</html>
