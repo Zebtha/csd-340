@@ -1,0 +1,65 @@
+<!-- 
+    Shane Tinsley - : Assignment 10.3 -2/25/24 Resources: 
+    Textbook HTML & CSS design and build websites 
+    https://github.com/Zebtha/csd-340.git
+    https://zebtha.github.io/csd-340/
+    https://zebtha.github.io/csd-340/module-10/Tinsley_Mod10_3.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <!-- Meta tags -->
+    <meta name="description" content="JavaScript that flips image on click.">
+    <meta name="keywords" content="HTML, CSS, web development, CSD 340">
+    <meta name="robots" content="nofollow">
+    <meta name="author" content="Shane Tinsley">
+    <script>
+        function handleImageClick(event) {
+            // Get the clicked image
+            var clickedImage = event.target;
+
+            // Create a canvas element
+            var canvas = document.createElement('canvas');
+            var ctx = canvas.getContext('2d');
+
+            // Set canvas dimensions to match the image
+            canvas.width = clickedImage.width;
+            canvas.height = clickedImage.height;
+
+            // Draw the image on the canvas
+            ctx.drawImage(clickedImage, 0, 0);
+
+            // Flip the image horizontally (mirror effect)
+            ctx.translate(clickedImage.width, 0);
+            ctx.scale(-1, 1);
+            ctx.drawImage(clickedImage, 0, 0);
+
+            // Replace the original image with the mirrored image
+            clickedImage.src = canvas.toDataURL();
+        }
+    </script>
+
+<body>
+    <div id="container">
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    </div>
+
+
+    <div>
+        <img src="cave_01.jpg" alt="Cave With Stalactites" onclick="handleImageClick()">
+    </div>
+
+    <div>
+    <img src="moon_01.jpg" alt="Cresset Moon" onclick="handleImageClick()">
+    </div>
+    <section></section>
+
+
+
+
+</body>
+
+</html>
