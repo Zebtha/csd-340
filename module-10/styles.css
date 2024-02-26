@@ -1,0 +1,11 @@
+/* 
+    Shane Tinsley - : Assignment 10.3 -2/25/24 Resources: 
+    Textbook HTML & CSS design and build websites 
+    CSS CODE: Styles Sheet Tinsley_Mod10_3.html
+    https://github.com/Zebtha/csd-340.git
+    https://zebtha.github.io/csd-340/
+    https://zebtha.github.io/csd-340/module-10/Tinsley_Mod10_3.html
+ */
+   .flippable-image {
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
