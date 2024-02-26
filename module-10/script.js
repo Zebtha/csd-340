@@ -8,24 +8,24 @@
  */
 // Function to handle image clicks and toggle between paired images
 function handleImageClick(clickedImage) {
-    // Get the current source of the clicked image
-    const currentSrc = clickedImage.src;
-  
-    // Declare a variable to store the new source (initialized as empty)
-    let newSrc;
-  
-    // Check for "_01.jpg" in the source and set new source accordingly
-    if (currentSrc.includes("_01.jpg")) {
-      newSrc = currentSrc.replace(/_01\.jpg$/, "_02.jpg");
-    }
-  
-    // Check for "_02.jpg" in the source and set new source accordingly
-    else if (currentSrc.includes("_02.jpg")) {
-      newSrc = currentSrc.replace(/_02\.jpg$/, "_01.jpg");
-    }
-  
-    // Update the image source only if a valid new source is found and it's different from the current source
-    if (newSrc && newSrc !== currentSrc) {
-      clickedImage.src = newSrc;  // Assign the new source to the image
-    }
+  // Get the current source of the clicked image
+  const currentSrc = clickedImage.src;
+
+  // Declare a variable to store the new source (initialized as empty)
+  let newSrc;
+
+  // Check for "_01.jpg" in the source and set new source accordingly
+  if (currentSrc.includes("_01.jpg")) {
+    newSrc = currentSrc.replace(/_01\.jpg$/, "_02.jpg");
   }
+
+  // Check for "_02.jpg" in the source and set new source accordingly
+  else if (currentSrc.includes("_02.jpg")) {
+    newSrc = currentSrc.replace(/_02\.jpg$/, "_01.jpg");
+  }
+
+  // Update the image source only if a valid new source is found and it's different from the current source
+  if (newSrc && newSrc !== currentSrc) {
+    clickedImage.src = newSrc;  // Assign the new source to the image
+  }
+}

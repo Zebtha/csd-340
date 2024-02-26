@@ -6,6 +6,7 @@
     https://zebtha.github.io/csd-340/
     https://zebtha.github.io/csd-340/module-10/Tinsley_Mod10_3.html
  */
-   .flippable-image {
-    cursor: pointer; /* Change cursor to pointer on hover */
-  }
+.flippable-image {
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+}
