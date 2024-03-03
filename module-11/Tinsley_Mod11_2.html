@@ -1,0 +1,44 @@
+<!-- 
+    Shane Tinsley - : Assignment 11.2 -3/2/24 
+    Interface to input tasks, add them to a list, delete the last task, 
+    and display the list of tasks. The functionality for handling tasks 
+    is implemented in the script.js file.
+    Resources: Textbook HTML & CSS design and build websites 
+    https://github.com/Zebtha/csd-340.git
+    https://zebtha.github.io/csd-340/
+    https://zebtha.github.io/csd-340/module-11/Tinsley_Mod11_2.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSD 340 Web Development with HTML and CSS</title>
+
+  <!-- Meta tags -->
+  <meta name="description" content="JavaScript that swaps image on click.">
+  <meta name="keywords" content="HTML, CSS, web development, CSD 340">
+  <meta name="robots" content="nofollow">
+  <meta name="author" content="Shane Tinsley">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div id="container">
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <p>Enter a task:</p>
+    <input type="text" id="taskInput">
+    <button onclick="addTask()">Add</button>
+    <button onclick="deleteLast()">Delete Last Entry</button>
+    <br>
+    <button onclick="displayTasks()">Display</button>
+    <p id="taskList"></p>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
