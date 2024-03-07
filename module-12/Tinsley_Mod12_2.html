@@ -1,0 +1,53 @@
+<!-- 
+    Shane Tinsley - : Assignment 12.2 -3/7/24 
+    HTML to insert ordered lists from script.js and events.
+    Resources: Textbook HTML & CSS design and build websites 
+    https://github.com/Zebtha/csd-340.git
+    https://zebtha.github.io/csd-340/
+    https://zebtha.github.io/csd-340/module-11/Tinsley_Mod11_2.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Tinsley_Mod12_2.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+        <div class="books-container">
+            <h3>Top 10 Favorite Books</h3>
+            <ol id="booksList"></ol>
+            <div class="buttons">
+                <button onclick="sortAscendingBooks()">Top to Bottom</button>
+                <button onclick="sortDescendingBooks()">Bottom to Top</button>
+            </div>
+        </div>
+
+        <div class="learned-container">
+            <h3>5 Things I've Learned Since the Course Started</h3>
+            <ul>
+                <li>The fundamental structure of HTML documents, including the use of tags.</li>
+                <li>How to create different types of content elements, such as headings, paragraphs, lists, and links.
+                </li>
+                <li>How to insert images and specify their sources and attributes.</li>
+                <li>How to organize content into sections using containers and span elements for grouping and styling.
+                </li>
+                <li>Basic formatting techniques, such as bold, italics, and changing text size and color using CSS
+                    styles.</li>
+            </ul>
+        </div>
+
+        <div class="back-link">
+            <a href="../index.html">Back to Landing Page</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

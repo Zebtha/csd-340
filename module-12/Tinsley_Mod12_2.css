@@ -1,0 +1,80 @@
+/* 
+    Shane Tinsley - : Assignment 12.2 -3/7/24 
+    Styles Tinsley_Mod12_2.html
+    Resources: Textbook HTML & CSS design and build websites 
+    https://github.com/Zebtha/csd-340.git
+    https://zebtha.github.io/csd-340/
+    https://zebtha.github.io/csd-340/module-11/Tinsley_Mod11_2.html
+*/
+/* Center the h1 title */
+h1 {
+  text-align: center;
+}
+
+/* Container Styles */
+#container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Clear floats */
+}
+
+/* Book and Learned Container Styles */
+.books-container, .learned-container {
+  width: 40%; /* Each container takes 48% of the container width */
+  float: left;
+  margin-right: 4%; /* Add space between containers */
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+  padding: 10px; /* Add padding inside the container */
+  border-radius: 15px;
+  border: 1px solid red; /* Red border for books container */
+}
+
+.learned-container {
+  border-style: dashed; /* Dashed border for learned container */
+}
+
+/* Back Link Styles */
+.back-link {
+  text-align: right;
+  clear: both; /* Ensure it appears below the floated elements */
+}
+
+.back-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Set font weights for headers and lists */
+h3 {
+  font-weight: 500;
+}
+
+ol, ul {
+  font-weight: 300;
+}
+
+/* Style ordered and unordered lists */
+ol, ul {
+  padding-left: 20px; /* Add left padding for lists */
+}
+
+ol {
+  list-style: decimal outside;
+}
+
+ul {
+  list-style: upper-roman outside;
+}
+
+/* Add underline on hover for links */
+a:hover {
+  text-decoration: underline;
+}
